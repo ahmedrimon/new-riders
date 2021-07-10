@@ -1,35 +1,48 @@
-import React, { Component } from 'react';
-import GoogleMapReact from 'google-map-react';
+import React from 'react'
+import './Map.css';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-class Map extends Component {
-  static defaultProps = {
-    center: {
-      lat: 23.4607,
-      lng: -91.1809
-    },
-    zoom: 8
-  };
+const containerStyle = {
+  width: '75%',
+  height: '800px',
+  marginLeft: '50px',
+  position: 'absolute',
+  right: '50px',
+  borderRadius: '5px'
+};
 
-  render() {
-    return (
-      // Important! Always set the container height explicitly
-      <div style={{ height: '400px', width: '400px' }}>
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyDG8_l5uL96DE57vzJ8mLRrPGSbkrc-Sq0"}}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
-        >
-          <AnyReactComponent
-            lat={23.4607}
-            lng={-91.1809}
-            text="Cumilla"
-          />
-        </GoogleMapReact>
-      </div>
-    );
-  }
+const center = {
+  lat: 23.6115,
+  lng: 90.9773
+};
+
+const onLoad = marker => {
+  console.log('marker: ', marker)
 }
 
-export default Map;
+function Map() {
+  return (
+
+    <div>
+    <LoadScript
+      googleMapsApiKey="AIzaSyDG8_l5uL96DE57vzJ8mLRrPGSbkrc-Sq0"
+    >
+      <GoogleMap
+        className="map"
+        mapContainerStyle={containerStyle}
+        center={center}
+        zoom={14}
+      >
+      <Marker
+      onLoad={onLoad}
+      position={center}
+      />
+      </GoogleMap>
+    </LoadScript>
+    </div>
+
+  )
+}
+
+export default React.memo(Map)

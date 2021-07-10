@@ -1,0 +1,17 @@
+.form {
+  text-align: center;
+  border: 1px solid black;
+}
+.form-group {
+  margin-left: 675px;
+  width: 400px;
+}
+.text {
+  text-align: center;
+}
+.facebook-button {
+  margin-left: 49rem;
+}
+.google-button {
+    margin-left: 49.5rem;
+}

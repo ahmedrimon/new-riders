@@ -1,0 +1,16 @@
+.row {
+    margin: 100px 100px ;
+}
+.card {
+    margin: 50px 50px;
+    text-decoration: none;
+}
+.image {
+    padding: 50px 50px;
+}
+.title {
+    text-align: center;
+}
+.button {
+    margin-left: 80px;
+}
