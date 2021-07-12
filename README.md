@@ -6,6 +6,7 @@
 
 - Use map
 
+- PrivateRoute uses
 <h3 align="left">Live site link:</h3>
 
 
