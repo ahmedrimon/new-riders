@@ -15,8 +15,8 @@ const Home = () => {
   }
 
   return (
+    // Navbar
     <div>
-    
     <Navbar expand="lg">
       <Navbar.Brand href="/home">Pick-Riders</Navbar.Brand>
 
