@@ -12,7 +12,7 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://fb.com/https://www.facebook.com/iftekhar.ahmed4" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="https://www.facebook.com/iftekhar.ahmed4" height="30" width="40" /></a>
-<a href="https://instagram.com/https://www.instagram.com/anonno_ruddho" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="https://www.instagram.com/anonno_ruddho/" height="30" width="40" /></a>
+<a href="https://instagram.com/anonno_ruddho/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="https://www.instagram.com/anonno_ruddho/" height="30" width="40" /></a>
 </p>
 - 📫 How to reach me **ahmedrimon377472@gmail.com**
 <h3 align="left">Languages and Tools:</h3>
