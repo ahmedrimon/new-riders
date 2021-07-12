@@ -1,13 +1,19 @@
 import React from "react";
 import './Header.css';
-import { Navbar, Nav} from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
+import { useContext } from "react";
+import { UserContext } from "../../App";
 
 const Home = () => {
+
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext)
+
   const history = useHistory();
   const handleClick = () => {
     history.push('/login')
   }
+
   return (
     <div>
     
@@ -22,6 +28,7 @@ const Home = () => {
           <Nav.Link className="spacing" href="/login">Destination</Nav.Link>
           <Nav.Link className="spacing" href="/blog">Blog</Nav.Link>
           <Nav.Link className="spacing" href="/contact">Contact</Nav.Link>
+          <Nav.Link>{loggedInUser.name}</Nav.Link>
         </Nav>
         
         <button onClick={() => handleClick()} className="main-button">Login</button>
